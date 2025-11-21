@@ -12,6 +12,7 @@ export default function Footer() {
       <div className="absolute inset-0 bg-gradient-to-t from-amber-950/10 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto">
+        {/* Grid of 3 columns */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -123,43 +124,45 @@ export default function Footer() {
           </div>
         </div>
 
-       <div className="border-t border-amber-500/20 pt-8 mt-8">
-  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-    <p className="text-gray-400 text-sm text-center md:text-left">
-      © {currentYear} SHAFI WATCHES. All rights reserved.
-    </p>
-  </div>
-
-  <p className="text-gray-500 text-xs text-center mt-2">
-    Made by <span className="font-semibold">Subhan Khan</span>
-  </p>
-</div>
-
-
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
-              <span>Made with</span>
-              <Heart size={16} className="text-red-500 animate-pulse" />
-              <span>for Watch Enthusiasts</span>
+        {/* Bottom area: copyright / made by on left, made-with + button on right */}
+        <div className="border-t border-amber-500/20 pt-8 mt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="text-center md:text-left">
+              <p className="text-gray-400 text-sm">
+                © {currentYear} SHAFI WATCHES. All rights reserved.
+              </p>
+              <p className="text-gray-500 text-xs mt-2">
+                Made by <span className="font-semibold">Subhan Khan</span>
+              </p>
             </div>
 
-            <button
-              onClick={scrollToTop}
-              className="group flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors duration-300"
-            >
-              <Watch
-                size={20}
-                className="group-hover:rotate-12 transition-transform duration-300"
-              />
-              <span className="text-sm font-medium">Back to Top</span>
-            </button>
-          </div>
-        </div>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 text-gray-400 text-sm">
+                <span>Made with</span>
+                <Heart size={16} className="text-red-500 animate-pulse" />
+                <span>for Watch Enthusiasts</span>
+              </div>
 
-        <div className="mt-6 text-center">
-          <p className="text-xs text-gray-500">
-            Authorized dealer of premium watch brands • 100% Original Timepieces
-            • Satisfaction Guaranteed
-          </p>
+              <button
+                onClick={scrollToTop}
+                className="group flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors duration-300"
+              >
+                <Watch
+                  size={20}
+                  className="group-hover:rotate-12 transition-transform duration-300"
+                />
+                <span className="text-sm font-medium">Back to Top</span>
+              </button>
+            </div>
+          </div>
+
+          {/* final small centered line */}
+          <div className="mt-6 text-center">
+            <p className="text-xs text-gray-500">
+              Authorized dealer of premium watch brands • 100% Original Timepieces
+              • Satisfaction Guaranteed
+            </p>
+          </div>
         </div>
       </div>
     </footer>
