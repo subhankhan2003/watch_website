@@ -123,11 +123,18 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-amber-500/20 pt-8 mt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm text-center md:text-left">
-              © {currentYear} SHAFI WATCHES. All rights reserved.
-            </p>
+       <div className="border-t border-amber-500/20 pt-8 mt-8">
+  <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+    <p className="text-gray-400 text-sm text-center md:text-left">
+      © {currentYear} SHAFI WATCHES. All rights reserved.
+    </p>
+  </div>
+
+  <p className="text-gray-500 text-xs text-center mt-2">
+    Made by <span className="font-semibold">Subhan Khan</span>
+  </p>
+</div>
+
 
             <div className="flex items-center gap-2 text-gray-400 text-sm">
               <span>Made with</span>
